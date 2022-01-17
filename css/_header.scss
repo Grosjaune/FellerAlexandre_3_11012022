@@ -1,0 +1,52 @@
+// _header.scss
+
+.box_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo_header {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.logo_header img {
+    width: 40%;
+}
+
+.location_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E2E2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.location_header form {
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.location_header form .searchtest {
+    padding-right: 15px;
+
+}
+
+.location_header form .textsearch input {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #E2E2E2;
+}
+
+::placeholder {
+    color: black;
+}
+
+.location_header form .buttonsearch {
+    display: none;
+}

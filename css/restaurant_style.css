@@ -1,0 +1,78 @@
+@media screen and (max-width: 767px) {
+
+@import 'header';
+
+main img {
+    width: 100%;
+}
+
+.global_box {
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.restaurant_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.restaurant_name {
+    font-size: 32px;
+}
+
+.card_restaurant_icon {
+    font-size: 24px;
+}
+
+.restaurant_box_title {
+    
+}
+
+em {
+    font-style: normal;
+    padding-bottom: 2px;
+    border-bottom: solid #99E2D0;
+}
+
+.main_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.food_box {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(153, 107, 107, 0.2);
+     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 15px 15px 15px 15px;
+}
+
+.food_card_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.food_name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.food_price {
+    font-weight: bold;
+}
+
+
+}

@@ -1,0 +1,30 @@
+// _footer.scss
+
+footer {
+    background-color: rgba(0, 0, 0, 0.733);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 20px;
+}
+
+.title_footer {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+footer ul li {
+    display: flex;
+    gap: 15px ;
+    list-style: none;
+    Color: white;
+}
+
+
+footer ul li img {
+    width: 30%;
+}
+
