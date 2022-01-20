@@ -1,0 +1,108 @@
+@media screen and (max-width: 767px) {
+    @import 'mixin';
+    @import 'header';
+
+   .logo_header {
+       display: flex;
+       align-items: center;
+       gap: 33%;
+   }
+
+    main img {
+        
+        width: 100%;
+    }
+
+    .global_box {
+        display: flex;
+        flex-direction: column;
+        border-radius: 50px 50px 0px 0px;
+        width: 100%;
+        background-color: #F2F2F2;
+        align-items: center;
+        transform: translateY(-5%);
+    }
+
+    .restaurant_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin-left: 20px;
+        margin-right: 20px;
+    
+    }
+    
+    .restaurant_name {
+        font-size: 32px;
+    }
+    
+    .card_restaurant_icon {
+        font-size: 24px;
+    }
+    
+    .restaurant_box_title {
+        
+    }
+    
+    em {
+        font-style: normal;
+        padding-bottom: 2px;
+        border-bottom: solid #99E2D0;
+    }
+    
+    .main_box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .food_box {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        background-color: white;
+        border-radius: 30px;
+        padding: 15px;
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 1px 1px 2px 0px rgba(153, 107, 107, 0.2);
+         box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
+        border-radius: 15px 15px 15px 15px;
+    }
+    
+    .food_card_name {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .food_name {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .food_price {
+        font-weight: bold;
+    }
+    
+    .food_box_align {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .purchase {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        @include orderbutton;
+        width: 30% ;
+    }
+
+    @import 'footer';
+    
+    }

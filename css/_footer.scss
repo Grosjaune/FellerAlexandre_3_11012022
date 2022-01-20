@@ -1,30 +1,41 @@
 // _footer.scss
 
 footer {
+    font-weight: bold;
+    font-size: 16px;
     background-color: rgba(0, 0, 0, 0.733);
-}
-
-footer ul {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
     padding-bottom: 20px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 5px;
+
+        li {
+            display: flex;
+            gap: 15px ;
+            list-style: none;
+            color: white;
+
+            &.title_footer {
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }
+
+            i {
+                width: 15px;
+            }
+            
+            img {
+                width: 120px;
+                padding-bottom: 5px;
+                padding-top: 5px;
+            }
+        }
+    
+    }
+
 }
 
-.title_footer {
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-footer ul li {
-    display: flex;
-    gap: 15px ;
-    list-style: none;
-    Color: white;
-}
-
-
-footer ul li img {
-    width: 30%;
-}
 

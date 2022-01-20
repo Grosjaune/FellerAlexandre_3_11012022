@@ -1,105 +1,159 @@
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 992px) {
+    @import 'desktop';
+    
+}
+
+@media screen and (max-width: 991px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Shrikhand&display=swap');
+    @import 'mixin';
+    @import 'header';
+    @import 'mainboxes';
+    @import 'footer';
 
     * {
         box-sizing: border-box;
     }
 
-    @import 'header';
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .location_header form {
+        display: flex;
+        justify-content: center;
+        margin-left: 90px;
+    }
     
+    .location_header form .searchtest {
+        padding-right: 15px;
+    }
+    
+    .location_header form .textsearch input {
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #E2E2E2;
+    }
+    
+    ::placeholder {
+        color: black;
+    }
+    
+    .location_header form .buttonsearch {
+        display: none;
+    }
+
     /* manual section */
-    
     .title_card {
+        font-family: 'Shrikhand', sans-serif;
         margin-top: 50px;
         margin-left: 10px;
     }
+
+    .book_box a {
+        text-decoration: none;
+    }
+
+
+
     
     /* book section */
+    .book_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F2F2;
+        gap: 20px;
+        height: 390px;
+    }
 
-.book_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F2F2F2;
-    gap: 20px;
-    height: 390px;
-}
+    .card_book1 {
+        display: flex;
+        justify-content: center;
+    }
 
-.card_book1 {
-    display: flex;
-    justify-content: center;
-}
+    .card_book1 span {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
 
-.card_book1 span {
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-    margin-right: 40px;
-    margin-left: 40px;
-}
+    .card_book2 {
+        display: flex;
+        justify-content: center;
+    }
 
-.card_book2 {
-    display: flex;
-    justify-content: center;
-}
+    .card_book2 span {
+        font-size: 22px;
+        text-align: center;
+        margin-left: 30px;
+        margin-left: 30px;
+    }
 
-.card_book2 span {
-    font-size: 22px;
-    text-align: center;
-    margin-left: 30px;
-    margin-left: 30px;
-}
+    .card_book3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
 
-.card_book3 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    margin-top: 30px;
-      }
+    .card_book3 span {
+        @include orderbutton;
+    }
+    
+    .card_book3 a {
+        display: inline-block;
+    }
 
-.card_book3 span {
-    font-size: 20px;
-    color: white;
-    background: linear-gradient(#FF79DA, #9356DC);
-    border-radius: 50px;
-    padding: 20px 30px 20px 30px;
-}
-
-    @import 'mainboxes' ;
+    a:hover span {
+        display: inline-block;
+        background-color: red !important;
+        @include orderbutton;
+    }
 
     /* restaurants */
-    
+
+    .restaurants_global_box {
+        padding-top: 5px;
+        padding-bottom: 40px;
+        background-color: #F2F2F2;
+    }
+
     .restaurants_box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15px ;
+        gap: 15px;
     }
-    
+
     .card_restaurant {
         display: flex;
         flex-direction: column;
-        width: 95%;
+        width: 90%;
         height: 300px;
         box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
         -moz-box-shadow: 1px 1px 2px 0px rgba(153, 107, 107, 0.2);
         box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
         border-radius: 15px 15px 15px 15px;
     }
-    
+
     .card_restaurant img {
         width: 100%;
         height: 66%;
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
     }
-    
+
     .card_restaurant_align {
         display: flex;
         flex-direction: column;
     }
-    
+
     .card_restaurant_align_icon {
         display: flex;
         justify-content: space-between;
@@ -108,21 +162,17 @@
         margin-left: 15px;
         margin-right: 15px;
     }
-    
+
     .card_restaurant_text1 {
         font-size: 24px;
         font-weight: bold;
     }
-    
+
     .card_restaurant_text2 {
         font-size: 24px;
     }
-    
+
     .card_restaurant_icon {
         font-size: 28px;
     }
-
-    @import 'footer'; 
-    
-
-    }
+}

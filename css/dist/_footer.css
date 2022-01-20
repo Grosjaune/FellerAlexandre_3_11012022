@@ -1,26 +1,30 @@
 footer {
+  font-weight: bold;
+  font-size: 16px;
   background-color: rgba(0, 0, 0, 0.733);
+  padding-bottom: 20px;
 }
-
 footer ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
-
-.title_footer {
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-
 footer ul li {
   display: flex;
   gap: 15px;
   list-style: none;
-  Color: white;
+  color: white;
 }
-
+footer ul li.title_footer {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+footer ul li i {
+  width: 15px;
+}
 footer ul li img {
-  width: 30%;
+  width: 120px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
