@@ -17,6 +17,8 @@ footer {
             gap: 15px ;
             list-style: none;
             color: white;
+            text-decoration: none;
+            
 
             &.title_footer {
                 margin-top: 20px;
@@ -36,4 +38,7 @@ footer {
     }
 }
 
-
+a {
+    text-decoration: none;
+  }
+  

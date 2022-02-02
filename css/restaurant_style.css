@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 992px) {
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&family=Roboto:wght@500;700&family=Rubik+Beastly&family=Shrikhand&display=swap");
   .box_header {
     display: flex;
@@ -11,7 +11,6 @@
     justify-content: center;
     padding: 15px;
   }
-
   .logo_header img {
     width: 40%;
   }
@@ -28,11 +27,13 @@
   .logo_header {
     display: flex;
     align-items: center;
-    gap: 33%;
+    gap: 15%;
   }
 
   main img {
     width: 100%;
+    height: 450px;
+    object-fit: cover;
   }
 
   .global_box {
@@ -87,6 +88,230 @@
     -moz-box-shadow: 1px 1px 2px 0px rgba(153, 107, 107, 0.2);
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
     border-radius: 15px 15px 15px 15px;
+    animation: opacity 1s both;
+    animation-delay: 0.2s;
+  }
+
+  .checkbox {
+    position: absolute;
+    background: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    padding: 0 13px;
+  }
+  .checkbox i {
+    font-size: 30px;
+    color: white;
+    transform: rotate 180deg;
+    animation: rotate 0.5s both;
+  }
+
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .animation2 {
+    animation-delay: 0.4s;
+  }
+
+  .animation3 {
+    animation-delay: 0.7s;
+  }
+
+  .food_card_name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .food_name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .food_price {
+    font-weight: bold;
+  }
+
+  .food_box_align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .purchase {
+    display: flex;
+    justify-content: center;
+    align-self: unset;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 50px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 15%;
+  }
+
+  .align_purchase {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .align_purchase :hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    filter: brightness(1.1);
+    transition: all 0.5s ease-out;
+  }
+
+  footer {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.733);
+    padding-bottom: 20px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 5px;
+  }
+  footer ul li {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+  }
+  footer ul li.title_footer {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  footer ul li i {
+    width: 15px;
+  }
+  footer ul li img {
+    width: 120px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&family=Roboto:wght@500;700&family=Rubik+Beastly&family=Shrikhand&display=swap");
+  .box_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo_header {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  .logo_header img {
+    width: 40%;
+  }
+
+  .location_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E2E2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo_header {
+    display: flex;
+    align-items: center;
+    gap: 33%;
+  }
+
+  main img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .global_box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-5%);
+  }
+
+  .restaurant_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .restaurant_name {
+    font-size: 32px;
+  }
+
+  .card_restaurant_icon {
+    font-size: 24px;
+  }
+
+  em {
+    font-style: normal;
+    padding-bottom: 2px;
+    border-bottom: solid #99E2D0;
+  }
+
+  .main_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .food_box {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(153, 107, 107, 0.2);
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px 15px 15px 15px;
+    animation: opacity 1s both;
+    animation-delay: 0.2s;
+  }
+
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .animation2 {
+    animation-delay: 0.4s;
+  }
+
+  .animation3 {
+    animation-delay: 0.7s;
   }
 
   .food_card_name {
@@ -125,6 +350,12 @@
     width: 30%;
   }
 
+  .align_purchase {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   footer {
     font-weight: bold;
     font-size: 16px;
@@ -142,6 +373,7 @@
     gap: 15px;
     list-style: none;
     color: white;
+    text-decoration: none;
   }
   footer ul li.title_footer {
     margin-top: 20px;
@@ -154,6 +386,10 @@
     width: 120px;
     padding-bottom: 5px;
     padding-top: 5px;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 

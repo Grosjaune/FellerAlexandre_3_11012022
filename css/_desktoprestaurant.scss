@@ -1,22 +1,16 @@
-
-@media screen and (min-width: 992px) {
-@import 'desktoprestaurant' ;
-
-}
-
-
-@media screen and (max-width: 991px) {
-    @import 'mixin';
-    @import 'header';
+@import 'mixin';
+@import 'header';
 
    .logo_header {
        display: flex;
        align-items: center;
-       gap: 33%;
+       gap: 15%;
    }
 
     main img {
+        
         width: 100%;
+        height: 450px;
         object-fit: cover;
     }
 
@@ -27,7 +21,6 @@
         border-radius: 50px 50px 0px 0px;
         width: 100%;
         background-color: #F2F2F2;
-        justify-content: center;
         align-items: center;
         transform: translateY(-5%);
     }
@@ -50,7 +43,7 @@
         font-size: 24px;
     }
     
-    
+
     em {
         font-style: normal;
         padding-bottom: 2px;
@@ -79,26 +72,41 @@
         animation: opacity 1s both;
         animation-delay: 0.2s;
     }
-    
 
-@keyframes opacity {
-    0% { opacity: 0;
+    .checkbox {
+        position: absolute;
+        background: #99E2D0;
+        border-radius: 0 15px 15px 0;
+        padding: 0 13px;
+
+        i {
+        font-size: 30px;
+        color: white;
+        transform: rotate (180deg);
+        animation: rotate 0.5s both;
+        }
+        
     }
 
-    100% {
-        opacity: 1;
+
+
+
+    @keyframes opacity {
+        0% { opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-}
 
+    .animation2 {
+        animation-delay: 0.4s;
+    }
 
-.animation2 {
-    animation-delay: 0.4s;
-}
-
-.animation3 {
-    animation-delay: 0.7s;
-}
-
+    .animation3 {
+        animation-delay: 0.7s;
+    }
 
     .food_card_name {
         display: flex;
@@ -116,7 +124,7 @@
     
     .food_box_align {
         display: flex;
-        flex-direction: column;
+
         justify-content: center;
         align-items: center;
         gap: 15px;
@@ -125,18 +133,25 @@
     .purchase {
         display: flex;
         justify-content: center;
+        align-self: unset;
         margin-top: 40px;
         margin-bottom: 50px;
         @include orderbutton;
-        width: 30% ;
+        width: 15% ;
+        
     }
 
     .align_purchase {
-    width:100%;
-    display: flex;
-    justify-content: center;
-    }
+        width:100%;
+        display: flex;
+        justify-content: center;
+
+        :hover {
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 80%);
+            filter: brightness(1.10);
+            transition: all 0.5s ease-out;
+         }
+        }
 
     @import 'footer';
     
-    }
