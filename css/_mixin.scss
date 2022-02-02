@@ -7,6 +7,7 @@
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
 }
 
+
 @mixin manualboxes {
     width: 95%;
     background-color: #F2F2F2;
@@ -40,3 +41,5 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+$brighteffect: #ffd9f4;
+

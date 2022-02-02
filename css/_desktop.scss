@@ -1,37 +1,35 @@
 @import 'mixin';
 @import 'mainboxes';
+@import 'header';
 
 * {
     box-sizing: border-box;
 }
 
-@import 'header';
-
 .location_header form {
     display: flex;
     justify-content: center;
     margin-left: 90px;
-}
 
-.location_header form .searchtest {
-    padding-right: 15px;
+    .searchtest {
+        padding-right: 15px;
+    }
 
-}
+    .textsearch input {
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #E2E2E2;
+    }
 
-.location_header form .textsearch input {
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #E2E2E2;
+    .buttonsearch {
+        display: none;
+    }
 }
 
 ::placeholder {
     color: black;
-}
-
-.location_header form .buttonsearch {
-    display: none;
 }
 
 /* manual section */
@@ -43,7 +41,6 @@
 
 .main_boxes li span { 
     transform: translateX(-165%);
-
 }
 
 /* book section */
@@ -61,26 +58,26 @@
 .card_book1 {
     display: flex;
     justify-content: center;
-}
 
-.card_book1 span {
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-    margin-right: 40px;
-    margin-left: 40px;
+    span {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
 }
 
 .card_book2 {
     display: flex;
     justify-content: center;
-}
 
-.card_book2 span {
-    font-size: 22px;
-    text-align: center;
-    margin-left: 30px;
-    margin-left: 30px;
+    span {
+        font-size: 22px;
+        text-align: center;
+        margin-left: 30px;
+        margin-left: 30px;
+    }
 }
 
 .card_book3 {
@@ -88,23 +85,22 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-}
 
-.card_book3 span {
-    @include orderbutton;
- }
+    span {
+        @include orderbutton;
+     }
+}
 
 .main_boxes {
     @include mainmanualboxes;
     flex-direction: row;
-}
 
-.main_boxes li {
-    @include manualboxes;
-}
-
-.main_boxes li i {
-    margin-right: 20px;
+    li {
+        @include manualboxes;
+        i {
+            margin-right: 20px;
+        }
+    }
 }
 
 /* restaurants */
@@ -112,28 +108,34 @@
 .restaurants_box {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    height: auto;
     gap: 25px;
 }
 
 .card_restaurant {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: 300px;
+    width: 24%;
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
     -moz-box-shadow: 1px 1px 2px 0px rgba(153, 107, 107, 0.2);
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
     border-radius: 15px 15px 15px 15px;
-}
 
-.card_restaurant img {
-    width: 100%;
-    height: 66%;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
+    a {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-decoration: none;
+        color: black;
+    }
+
+    a img {
+        width: 100%;
+        height: 66%;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+    }
 }
 
 .card_restaurant_align {
@@ -145,7 +147,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
     margin-left: 15px;
     margin-right: 15px;
 }
