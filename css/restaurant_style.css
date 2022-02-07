@@ -1,5 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Shrikhand&display=swap");
+footer {
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.733);
+  padding-bottom: 20px;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+}
+footer ul li {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer ul li.title_footer {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+footer ul li i {
+  width: 15px;
+}
+footer ul li img {
+  width: 120px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
 @media screen and (min-width: 992px) {
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&family=Roboto:wght@500;700&family=Rubik+Beastly&family=Shrikhand&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Shrikhand&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Shrikhand&display=swap");
   .box_header {
     display: flex;
     flex-direction: column;
@@ -24,10 +63,69 @@
     padding-bottom: 20px;
   }
 
+  footer {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.733);
+    padding-bottom: 20px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+  }
+  footer ul li {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+  }
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  footer ul li.title_footer {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  footer ul li i {
+    width: 15px;
+  }
+  footer ul li img {
+    width: 120px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  * {
+    text-decoration: none;
+    text-overflow: ellipsis;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  h2 {
+    font-family: "Shrikhand";
+  }
+
   .logo_header {
     display: flex;
     align-items: center;
-    gap: 15%;
+  }
+
+  .logo_image span {
+    font-family: "Shrikhand";
+    font-size: 50px;
+  }
+
+  .arrow_icon {
+    font-size: 20px;
+    color: black;
   }
 
   main img {
@@ -61,6 +159,10 @@
 
   .card_restaurant_icon {
     font-size: 24px;
+  }
+
+  .card_restaurant_icon i:hover {
+    opacity: 0;
   }
 
   em {
@@ -135,6 +237,11 @@
   .food_name {
     font-size: 20px;
     font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .food_subname {
+    margin-left: 10px;
   }
 
   .food_price {
@@ -150,21 +257,34 @@
     align-items: center;
     height: 75px;
     gap: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
-  .purchase {
+  .align_purchase {
     display: flex;
     justify-content: center;
-    align-self: unset;
+  }
+
+  .align_purchase a {
+    display: flex;
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 50px;
+    width: 30%;
+  }
+  .align_purchase a span {
     font-size: 20px;
     color: white;
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 50px;
     padding: 20px 30px 20px 30px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    width: 15%;
+  }
+  .align_purchase a span:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    filter: brightness(1.1);
+    transition: all 0.5s ease-out;
   }
 
   .check {
@@ -181,56 +301,9 @@
     font-size: 30px;
     color: white;
   }
-
-  .align_purchase {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .align_purchase :hover {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
-    filter: brightness(1.1);
-    transition: all 0.5s ease-out;
-  }
-
-  footer {
-    font-weight: bold;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.733);
-    padding-bottom: 20px;
-  }
-  footer ul {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-bottom: 5px;
-  }
-  footer ul li {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    color: white;
-    text-decoration: none;
-  }
-  footer ul li.title_footer {
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-  footer ul li i {
-    width: 15px;
-  }
-  footer ul li img {
-    width: 120px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-  }
-
-  a {
-    text-decoration: none;
-  }
 }
 @media screen and (max-width: 991px) {
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&family=Roboto:wght@500;700&family=Rubik+Beastly&family=Shrikhand&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Shrikhand&display=swap");
   .box_header {
     display: flex;
     flex-direction: column;
@@ -255,15 +328,40 @@
     padding-bottom: 20px;
   }
 
+  * {
+    text-decoration: none;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  header {
+    font-family: "Shrikhand";
+  }
+
   .logo_header {
     display: flex;
+    justify-content: unset;
     align-items: center;
-    gap: 33%;
+    gap: 25%;
+    font-size: 50px;
+  }
+  .logo_header img {
+    width: 70%;
+  }
+  .logo_header i {
+    font-size: 25px;
+    color: black;
   }
 
   main img {
     width: 100%;
     object-fit: cover;
+  }
+
+  .highimg {
+    height: 400px;
   }
 
   .global_box {
@@ -284,6 +382,10 @@
     width: 80%;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  h2 {
+    font-family: "Shrikhand";
   }
 
   .restaurant_name {
@@ -314,9 +416,9 @@
     height: 100%;
     background-color: white;
     border-radius: 30px;
-    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 1px 1px 2px 0px rgba(153, 107, 107, 0.2);
-    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 8px 0px rgba(153, 107, 107, 0.2);
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.2);
     border-radius: 15px 15px 15px 15px;
     animation: opacity 1s both;
     animation-delay: 0.2s;
@@ -374,7 +476,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 8px;
     margin-left: 15px;
+  }
+  .food_card_name .food_subname {
+    font-weight: normal;
   }
 
   .food_name {
@@ -386,9 +492,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
-  }
-  .food_price span {
-    padding-right: 15px;
+    gap: 10px;
   }
 
   .food_box_align {
@@ -398,62 +502,35 @@
     align-items: center;
     gap: 15px;
     height: 320px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
-  .purchase {
+  .align_purchase a {
     display: flex;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 50px;
+    width: 30%;
+  }
+  .align_purchase a span {
     font-size: 20px;
     color: white;
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 50px;
     padding: 20px 30px 20px 30px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    width: 30%;
+  }
+  .align_purchase a span:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    filter: brightness(1.1);
+    transition: all 0.5s ease-out;
   }
 
   .align_purchase {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-
-  footer {
-    font-weight: bold;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.733);
-    padding-bottom: 20px;
-  }
-  footer ul {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-bottom: 5px;
-  }
-  footer ul li {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    color: white;
-    text-decoration: none;
-  }
-  footer ul li.title_footer {
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-  footer ul li i {
-    width: 15px;
-  }
-  footer ul li img {
-    width: 120px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-  }
-
-  a {
-    text-decoration: none;
   }
 }
 

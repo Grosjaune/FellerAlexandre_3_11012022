@@ -1,18 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Shrikhand&display=swap');
+@import 'footer';
 
 @media screen and (min-width: 992px) {
 @import 'desktoprestaurant' ;
-
 }
-
 
 @media screen and (max-width: 991px) {
     @import 'mixin';
     @import 'header';
 
+    * {
+        text-decoration: none;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    header {
+        font-family: 'Shrikhand';
+    }
+
    .logo_header {
        display: flex;
+       justify-content: unset;
        align-items: center;
-       gap: 33%;
+       gap: 25%;
+       font-size: 50px;
+
+       img {
+           width: 70%;
+       }
+
+       i {
+           font-size: 25px;
+           color: black;
+       }
    }
 
     main img {
@@ -20,6 +43,9 @@
         object-fit: cover;
     }
 
+    .highimg {
+        height: 400px;
+    }
 
     .global_box {
         display: flex;
@@ -39,7 +65,10 @@
         width: 80%;
         margin-left: 20px;
         margin-right: 20px;
-    
+    }
+
+    h2 {
+        font-family: 'Shrikhand';
     }
     
     .restaurant_name {
@@ -49,7 +78,6 @@
     .card_restaurant_icon {
         font-size: 24px;
     }
-    
     
     em {
         font-style: normal;
@@ -71,9 +99,9 @@
         height: 100%;
         background-color: white;
         border-radius: 30px;
-        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
-        -moz-box-shadow: 1px 1px 2px 0px rgba(153, 107, 107, 0.2);
-         box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.20);
+        box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 1px 1px 8px 0px rgba(153, 107, 107, 0.2);
+         box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.20);
         border-radius: 15px 15px 15px 15px;
         animation: opacity 1s both;
         animation-delay: 0.2s;
@@ -83,13 +111,9 @@
     .food_box:hover .check {
         margin-right: 0px;
         transition: margin-right 0.5s;
-        
-
         i {
             animation: spin 0.5s;
-
         }
-
     }
 
     .check {
@@ -102,14 +126,13 @@
         height: 100%;
         background: #99E2D0;
 
-
         i {
             font-size: 30px;
             color: white;
         }
     }
 
-    @keyframes spin {
+ @keyframes spin {
         0% {
             transform: rotate(0);
         }
@@ -117,7 +140,6 @@
             transform: rotate(360deg);
         }
     }
-
 
 @keyframes opacity {
     0% { opacity: 0;
@@ -136,27 +158,30 @@
     animation-delay: 0.7s;
 }
 
-
     .food_card_name {
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 8px;
         margin-left: 15px;
+        .food_subname {
+            font-weight: normal;
+            
+        }
     }
     
     .food_name {
         font-size: 20px;
         font-weight: bold;
+
     }
     
     .food_price {
         display: flex;
         align-items: center;
         font-weight: bold;
-
-        span {
-            padding-right: 15px;
-        }
+        gap: 10px;
     }
     
     .food_box_align {
@@ -166,16 +191,26 @@
         align-items: center;
         gap: 15px;
         height: 320px;
-        
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
-    .purchase {
+    .align_purchase a {
         display: flex;
         justify-content: center;
         margin-top: 40px;
         margin-bottom: 50px;
-        @include orderbutton;
         width: 30% ;
+
+        span {
+            @include orderbutton;
+        }
+
+        span:hover {
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 80%);
+            filter: brightness(1.10);
+            transition: all 0.5s ease-out;
+         }
     }
 
     .align_purchase {
@@ -183,7 +218,5 @@
     display: flex;
     justify-content: center;
     }
-
-    @import 'footer';
     
     }

@@ -1,14 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Shrikhand&display=swap');
 @import 'mixin';
 @import 'header';
+@import 'footer';
+
+* {
+text-decoration: none;
+text-overflow: ellipsis;
+}
+    
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: "Shrikhand";
+}
 
    .logo_header {
        display: flex;
        align-items: center;
-       gap: 15%;
+   }
+
+
+   .logo_image span {
+    font-family: "Shrikhand";
+    font-size: 50px;
+}
+
+   .arrow_icon {
+       font-size: 20px;
+       color: black;
    }
 
     main img {
-        
         width: 100%;
         height: 450px;
         object-fit: cover;
@@ -40,7 +64,11 @@
     .card_restaurant_icon {
         font-size: 24px;
     }
-    
+
+    .card_restaurant_icon i:hover {
+        opacity: 0;
+    }
+
     em {
         font-style: normal;
         padding-bottom: 2px;
@@ -78,9 +106,7 @@
 
         i {
             animation: spin 0.5s;
-
         }
-
     }
 
     @keyframes spin {
@@ -95,10 +121,8 @@
     @keyframes opacity {
         0% { opacity: 0;
         }
-
         100% {
-            opacity: 1;
-            
+            opacity: 1; 
         }
     }
 
@@ -120,6 +144,11 @@
     .food_name {
         font-size: 20px;
         font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .food_subname {
+        margin-left: 10px;
     }
     
     .food_price {
@@ -135,17 +164,31 @@
         align-items: center;
         height: 75px;
         gap: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
-    .purchase {
+    .align_purchase {
         display: flex;
         justify-content: center;
-        align-self: unset;
+    }
+
+    .align_purchase a {
+        display: flex;
+        justify-content: center;
         margin-top: 40px;
         margin-bottom: 50px;
-        @include orderbutton;
-        width: 15% ;
+        width: 30% ;
+
+        span {
+            @include orderbutton;
+        }
         
+        span:hover {
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 80%);
+            filter: brightness(1.10);
+            transition: all 0.5s ease-out;
+         }
     }
 
     .check {
@@ -157,25 +200,9 @@
         width: 50px;
         height: 100%;
         background: #99E2D0;
-
         i {
             font-size: 30px;
             color: white;
         }
     }
-
-    .align_purchase {
-        width:100%;
-        display: flex;
-        justify-content: center;
-
-        :hover {
-            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 80%);
-            filter: brightness(1.10);
-            transition: all 0.5s ease-out;
-         }
-
-        }
-
-    @import 'footer';
-    
+   
