@@ -11,212 +11,212 @@
 
     * {
         text-decoration: none;
-    }
 
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
+        body {
+            font-family: 'Roboto', sans-serif;
 
-    header {
-        font-family: 'Shrikhand';
-    }
-
-   .logo_header {
-       display: flex;
-       justify-content: unset;
-       align-items: center;
-       gap: 25%;
-       font-size: 50px;
-
-       img {
-           width: 70%;
-       }
-
-       i {
-           font-size: 25px;
-           color: black;
-       }
-   }
-
-    main img {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .highimg {
-        height: 400px;
-    }
-
-    .global_box {
-        display: flex;
-        flex-direction: column;
-        border-radius: 50px 50px 0px 0px;
-        width: 100%;
-        background-color: #F2F2F2;
-        justify-content: center;
-        align-items: center;
-        transform: translateY(-5%);
-    }
-
-    .restaurant_title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    h2 {
-        font-family: 'Shrikhand';
-    }
-    
-    .restaurant_name {
-        font-size: 32px;
-    }
-    
-    .card_restaurant_icon {
-        font-size: 24px;
-    }
-    
-    em {
-        font-style: normal;
-        padding-bottom: 2px;
-        border-bottom: solid #99E2D0;
-    }
-    
-    .main_box {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .food_box {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        border-radius: 30px;
-        box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.20);
-        -moz-box-shadow: 1px 1px 8px 0px rgba(153, 107, 107, 0.2);
-         box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.20);
-        border-radius: 15px 15px 15px 15px;
-        animation: opacity 1s both;
-        animation-delay: 0.2s;
-        overflow: hidden;
-    }
-
-    .food_box:hover .check {
-        margin-right: 0px;
-        transition: margin-right 0.5s;
-        i {
-            animation: spin 0.5s;
-        }
-    }
-
-    .check {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-right: -50px;
-        width: 50px;
-        height: 100%;
-        background: #99E2D0;
-
-        i {
-            font-size: 30px;
-            color: white;
-        }
-    }
-
- @keyframes spin {
-        0% {
-            transform: rotate(0);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-@keyframes opacity {
-    0% { opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.animation2 {
-    animation-delay: 0.4s;
-}
-
-.animation3 {
-    animation-delay: 0.7s;
-}
-
-    .food_card_name {
+            header {
+                font-family: 'Shrikhand';
+            }
         
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 8px;
-        margin-left: 15px;
-        .food_subname {
-            font-weight: normal;
+           .logo_header {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               font-size: 50px;
+        
+               img {
+                   width: 70%;
+               }
+        
+               i {
+                   font-size: 25px;
+                   color: black;
+               }
+           }
+        
+            main img {
+                width: 100%;
+                object-fit: cover;
+            }
+        
+            .highimg {
+                height: 400px;
+            }
+        
+            .global_box {
+                display: flex;
+                flex-direction: column;
+                border-radius: 50px 50px 0px 0px;
+                width: 100%;
+                background-color: #F2F2F2;
+                justify-content: center;
+                align-items: center;
+                transform: translateY(-5%);
+            }
+        
+            .restaurant_title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 80%;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        
+            h2 {
+                font-family: 'Shrikhand';
+            }
             
+            .restaurant_name {
+                font-size: 32px;
+            }
+            
+            .card_restaurant_icon {
+                font-size: 24px;
+            }
+            
+            em {
+                font-style: normal;
+                padding-bottom: 2px;
+                border-bottom: solid #99E2D0;
+            }
+            
+            .main_box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .food_box {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                border-radius: 30px;
+                box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.20);
+                -moz-box-shadow: 1px 1px 8px 0px rgba(153, 107, 107, 0.2);
+                 box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.20);
+                border-radius: 15px 15px 15px 15px;
+                animation: opacity 1s both;
+                animation-delay: 0.2s;
+                overflow: hidden;
+            }
+        
+            .food_box:hover .check {
+                margin-right: 0px;
+                transition: margin-right 0.5s;
+                i {
+                    animation: spin 0.5s;
+                }
+            }
+        
+            .check {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-right: -50px;
+                width: 50px;
+                height: 100%;
+                background: #99E2D0;
+        
+                i {
+                    font-size: 30px;
+                    color: white;
+                }
+            }
+
+            .food_card_name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 8px;
+                margin-left: 15px;
+
+                .food_subname {
+                    font-weight: normal;
+                }
+            }
+            
+            .food_name {
+                font-size: 20px;
+                font-weight: bold;
+
+            }
+            
+            .food_price {
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                gap: 10px;
+            }
+            
+            .food_box_align {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                height: 320px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        
+            .align_purchase a {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                width: 30% ;
+        
+                span {
+                    @include orderbutton;
+                }
+        
+                span:hover {
+                    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 80%);
+                    filter: brightness(1.10);
+                    transition: all 0.5s ease-out;
+                 }
+            }
+        
+
+                    /* spin animation */
+         @keyframes spin {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    
+    @keyframes opacity {
+        0% { opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
         }
     }
     
-    .food_name {
-        font-size: 20px;
-        font-weight: bold;
-
+    .animation2 {
+        animation-delay: 0.4s;
     }
     
-    .food_price {
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-        gap: 10px;
+    .animation3 {
+        animation-delay: 0.7s;
     }
-    
-    .food_box_align {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        height: 320px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .align_purchase a {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-        margin-bottom: 50px;
-        width: 30% ;
-
-        span {
-            @include orderbutton;
+            .align_purchase {
+            width:100%;
+            display: flex;
+            justify-content: center;
+            }  
         }
+    }   
+}
 
-        span:hover {
-            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 80%);
-            filter: brightness(1.10);
-            transition: all 0.5s ease-out;
-         }
-    }
-
-    .align_purchase {
-    width:100%;
-    display: flex;
-    justify-content: center;
-    }
     
-    }
