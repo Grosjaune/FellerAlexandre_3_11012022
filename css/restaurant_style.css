@@ -103,6 +103,7 @@ footer ul li img {
   }
   * body {
     font-family: "Roboto", sans-serif;
+    margin: 0px;
   }
   * body h2 {
     font-family: "Shrikhand";
@@ -117,6 +118,7 @@ footer ul li img {
   }
   * body .logo_header img {
     width: 70%;
+    position: relative;
   }
   * body .logo_image span {
     font-family: "Shrikhand";
@@ -138,8 +140,14 @@ footer ul li img {
     width: 100%;
     background-color: #F2F2F2;
     align-items: center;
-    transform: translateY(-5%);
+    position: absolute;
+    margin-top: -50px;
     /* menu */
+  }
+  * body .global_box p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   * body .global_box .restaurant_title {
     display: flex;
@@ -159,6 +167,7 @@ footer ul li img {
     font-style: normal;
     padding-bottom: 2px;
     border-bottom: solid #99E2D0;
+    margin-left: 8px;
   }
   * body .global_box .main_box {
     width: 100%;
@@ -214,16 +223,26 @@ footer ul li img {
     animation-delay: 0.7s;
   }
   * body .global_box .main_box .food_card_name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    overflow: hidden;
   }
-  * body .global_box .main_box .food_name {
+  * body .global_box .main_box .apetizclass {
+    margin-top: 0px;
+  }
+  * body .global_box .main_box .apetizclass p {
+    margin-top: 0px;
+  }
+  * body .global_box .main_box .food_name p {
     font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
   }
-  * body .global_box .main_box .food_subname {
+  * body .global_box .main_box .food_subname p {
+    font-weight: normal;
+    margin-top: 0px;
     margin-left: 10px;
   }
   * body .global_box .main_box .food_price {
@@ -310,6 +329,7 @@ footer ul li img {
   }
   * body {
     font-family: "Roboto", sans-serif;
+    margin: 0px;
     /* spin animation */
   }
   * body header {
@@ -323,6 +343,7 @@ footer ul li img {
   }
   * body .logo_header img {
     width: 70%;
+    position: relative;
   }
   * body .logo_header i {
     font-size: 25px;
@@ -343,7 +364,13 @@ footer ul li img {
     background-color: #F2F2F2;
     justify-content: center;
     align-items: center;
-    transform: translateY(-5%);
+    position: absolute;
+    margin-top: -50px;
+  }
+  * body p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   * body .restaurant_title {
     display: flex;
@@ -366,6 +393,7 @@ footer ul li img {
     font-style: normal;
     padding-bottom: 2px;
     border-bottom: solid #99E2D0;
+    margin-left: 8px;
   }
   * body .main_box {
     width: 100%;
@@ -410,18 +438,27 @@ footer ul li img {
     color: white;
   }
   * body .food_card_name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
     margin-left: 15px;
+    margin-bottom: 0px;
+    overflow: hidden;
   }
-  * body .food_card_name .food_subname {
+  * body .food_card_name .food_subname p {
     font-weight: normal;
+    margin-top: 0px;
+  }
+  * body .apetizclass {
+    margin-top: 0px;
+  }
+  * body .apetizclass p {
+    margin-top: 0px;
   }
   * body .food_name {
+    margin-top: 8px;
+  }
+  * body .food_name p {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 8px;
   }
   * body .food_price {
     display: flex;

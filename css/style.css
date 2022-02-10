@@ -6,6 +6,7 @@
     justify-content: center;
     gap: 25px;
     margin-bottom: 70px;
+    margin: 8px;
   }
   .main_boxes li {
     display: flex;
@@ -117,6 +118,7 @@
   }
   * body {
     font-family: "Roboto", sans-serif;
+    margin: 0px;
     /* header */
     /* manual section */
     /* book section */
@@ -232,17 +234,22 @@
   * body .main_boxes li i {
     margin-right: 20px;
   }
+  * body h2 {
+    margin-left: 8px;
+  }
   * body .restaurants_box {
     display: flex;
     flex-direction: row;
     height: auto;
     gap: 25px;
     margin-bottom: 15px;
+    margin: 5px;
     /* loading spinner */
     /* heart animation */
   }
   * body .restaurants_box .card_restaurant {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 24%;
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
@@ -293,6 +300,7 @@
     justify-content: right;
     background: #99e2d0;
     position: absolute;
+    right: 15px;
     align-items: center;
     margin-top: 25px;
   }
@@ -390,6 +398,7 @@
     justify-content: center;
     gap: 25px;
     margin-bottom: 70px;
+    margin: 8px;
   }
   .main_boxes li {
     display: flex;
@@ -476,6 +485,7 @@
   }
   * body {
     font-family: "Roboto", sans-serif;
+    margin: 0px;
     /* manual section */
     /* book section */
     /* restaurants */
@@ -565,6 +575,7 @@
   }
   * body h2 {
     font-size: 30px;
+    margin-left: 8px;
   }
   * body .restaurants_global_box {
     padding-top: 5px;
@@ -581,6 +592,7 @@
   * body .card_restaurant {
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 90%;
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 1px 1px 2px 0px rgba(153, 107, 107, 0.2);
@@ -634,6 +646,7 @@
     display: flex;
     background: #99e2d0;
     position: absolute;
+    right: 15px;
     margin-top: 25px;
   }
   * body .newrestaurant span {

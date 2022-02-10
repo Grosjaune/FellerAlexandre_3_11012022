@@ -14,6 +14,7 @@
 
         body {
             font-family: 'Roboto', sans-serif;
+            margin: 0px;
 
             header {
                 font-family: 'Shrikhand';
@@ -27,6 +28,7 @@
         
                img {
                    width: 70%;
+                   position: relative;
                }
         
                i {
@@ -52,7 +54,14 @@
                 background-color: #F2F2F2;
                 justify-content: center;
                 align-items: center;
-                transform: translateY(-5%);
+                position: absolute;
+                margin-top: -50px;
+            }
+
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
         
             .restaurant_title {
@@ -80,6 +89,7 @@
                 font-style: normal;
                 padding-bottom: 2px;
                 border-bottom: solid #99E2D0;
+                margin-left: 8px;
             }
             
             .main_box {
@@ -130,22 +140,35 @@
             }
 
             .food_card_name {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 8px;
-                margin-left: 15px;
 
-                .food_subname {
+                margin-left: 15px;
+                margin-bottom: 0px;
+                overflow: hidden;
+
+                .food_subname p {
                     font-weight: normal;
+                    margin-top: 0px;
                 }
             }
-            
+
+            .apetizclass {
+                margin-top: 0px;
+                p {
+                    margin-top: 0px;
+                }
+            }
+
             .food_name {
+                margin-top: 8px;
+            }
+            
+            .food_name p {
                 font-size: 20px;
                 font-weight: bold;
-
+                margin-bottom: 8px;
+    
             }
+
             
             .food_price {
                 display: flex;
