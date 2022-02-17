@@ -3,14 +3,19 @@
 
 @media screen and (min-width: 992px) {
 @import 'desktoprestaurant' ;
+@import 'footer';
 }
 
 @media screen and (max-width: 991px) {
     @import 'mixin';
     @import 'header';
+    @import 'footer';
+
+   
 
     * {
         text-decoration: none;
+        
 
         body {
             font-family: 'Roboto', sans-serif;
@@ -40,6 +45,7 @@
             main img {
                 width: 100%;
                 object-fit: cover;
+                
             }
         
             .highimg {
@@ -54,8 +60,9 @@
                 background-color: #F2F2F2;
                 justify-content: center;
                 align-items: center;
-                position: absolute;
-                margin-top: -50px;
+                z-index: 1;
+                position: relative;
+                margin-top: -60px;
             }
 
             p {
@@ -118,8 +125,11 @@
             .food_box:hover .check {
                 margin-right: 0px;
                 transition: margin-right 0.5s;
+                
+                
                 i {
                     animation: spin 0.5s;
+                    
                 }
             }
         
@@ -132,6 +142,7 @@
                 width: 50px;
                 height: 100%;
                 background: #99E2D0;
+                transition-duration: .5s;
         
                 i {
                     font-size: 30px;
@@ -187,6 +198,27 @@
                 margin-left: 5px;
                 margin-right: 5px;
             }
+
+            /* heart animation */
+
+           .card_restaurant_icon .far {
+            transform: translateX(100%);
+            color: black;
+        } 
+        
+            .card_restaurant_icon .fas {
+                color: transparent;
+                background-image: linear-gradient($secondary-color,$primary-color);
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+                transition: all 300ms;
+                transform: scale(1.1);
+            } 
+            
+            .card_restaurant_icon .fas:hover {
+            opacity: 1;
+            } 
         
             .align_purchase a {
                 display: flex;

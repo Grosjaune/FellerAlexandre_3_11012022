@@ -99,7 +99,7 @@
     color: white;
     text-decoration: none;
   }
-  footer ul li.title_footer {
+  footer ul li .title_footer {
     margin-top: 20px;
     margin-bottom: 5px;
   }
@@ -467,7 +467,7 @@
     color: white;
     text-decoration: none;
   }
-  footer ul li.title_footer {
+  footer ul li .title_footer {
     margin-top: 20px;
     margin-bottom: 5px;
   }
